@@ -39,3 +39,14 @@ rangeInput.forEach((input) => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var filterName = document.querySelector('.catalog__filter__item__cat .filter__name');
+    var filterList = document.querySelector('.catalog__filter__item__cat ul');
+
+    filterName.addEventListener('click', function () {
+        filterList.classList.toggle('open');
+        filterName.classList.toggle('open');
+    });
+});

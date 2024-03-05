@@ -11,9 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +50,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="" class="green">
                                         Все аттракционы
                                     </a>
                                 </li>
@@ -117,9 +121,24 @@
                                         d="M19.389 7.52833C18.9146 6.98083 18.2272 6.66667 17.5023 6.66667H17.4307C17.0154 2.92167 13.8363 0 9.98713 0C6.13799 0 2.95881 2.92167 2.54352 6.66667H2.49692C1.77286 6.66667 1.08626 6.98083 0.61105 7.52833C0.135837 8.07583 -0.0772175 8.80167 0.0251487 9.52083L0.908161 15.7075C1.2577 18.155 3.38326 20 5.8517 20H14.1484C16.6168 20 18.7424 18.1542 19.0919 15.7075L19.9749 9.52083C20.0773 8.8025 19.8634 8.07667 19.389 7.52833ZM9.98713 1.66667C12.9166 1.66667 15.3476 3.84417 15.7529 6.66667H4.22133C4.62663 3.84417 7.05762 1.66667 9.98713 1.66667ZM18.3271 9.285L17.444 15.4717C17.211 17.1033 15.7945 18.3342 14.1484 18.3342H5.8517C4.20469 18.3342 2.7882 17.1033 2.55601 15.4717L1.673 9.285C1.63804 9.0425 1.70795 8.80667 1.86774 8.62083C2.02836 8.435 2.25141 8.33333 2.49609 8.33333H17.5023C17.747 8.33333 17.97 8.435 18.1315 8.62083C18.2913 8.80667 18.362 9.0425 18.3271 9.285ZM10.8194 10.8333V15.8333C10.8194 16.2942 10.4474 16.6667 9.98713 16.6667C9.5269 16.6667 9.15488 16.2942 9.15488 15.8333V10.8333C9.15488 10.3725 9.5269 10 9.98713 10C10.4474 10 10.8194 10.3725 10.8194 10.8333ZM14.9806 10.8333V15.8333C14.9806 16.2942 14.6086 16.6667 14.1484 16.6667C13.6881 16.6667 13.3161 16.2942 13.3161 15.8333V10.8333C13.3161 10.3725 13.6881 10 14.1484 10C14.6086 10 14.9806 10.3725 14.9806 10.8333ZM6.65815 10.8333V15.8333C6.65815 16.2942 6.28613 16.6667 5.8259 16.6667C5.36567 16.6667 4.99365 16.2942 4.99365 15.8333V10.8333C4.99365 10.3725 5.36567 10 5.8259 10C6.28613 10 6.65815 10.3725 6.65815 10.8333Z"
                                         fill="white" />
                                 </svg>
+                                <div class="basket__item-count">
+                                    2
+                                </div>
                             </div>
-                            Корзина
+                            <div class="basket__text">
+                                Корзина
+                            </div>
                         </a>
+                    </li>
+                    <li>
+                        <button>
+                            <svg width="45" height="31" viewBox="0 0 45 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="45" height="5" rx="2" fill="#EF7D2D" />
+                                <rect y="13" width="45" height="5" rx="2" fill="#E6007E" />
+                                <rect y="26" width="45" height="5" rx="2" fill="#009640" />
+                            </svg>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -150,7 +169,6 @@
         <div class="container">
             <div class="product__wrap">
                 <div class="product__gallery">
-
                     <div class="product__main-image">
                         <img id="mainImage" src="assets/images/product1.png" alt="">
                     </div>
@@ -164,7 +182,24 @@
                         <img class="thubnails" src="assets/images/product8.png" alt="">
                         <img class="thubnails" src="assets/images/product9.png" alt="">
                     </div>
+                    <script>
+                        $(window).on('load resize', function () {
+                            if ($(window).width() < 769) {
+                                $('.product__thumbnails:not(.slick-initialized)').slick({
+                                    centerMode: true,
+                                    centerPadding: '0px',
+                                    slidesToShow: 2,
+                                    initialSlide: 2,
+                                    infinite: true,
+                                    variableWidth: false,
+                                    arrows: true,
+                                });
+                            } else {
+                                $(".product__thumbnails.slick-initialized").slick("unslick");
+                            }
+                        });
 
+                    </script>
                 </div>
                 <div class="product__right">
                     <div class="product__cart__name">
@@ -288,7 +323,14 @@
                     Описание:
                 </div>
                 <div class="product__description__text">
-                    Самый длинный аттракцион 50 метров. Состоит из шести блоков включающих разнообразные препятствия: ямы, горки, столбы, неустойчивые опоры и другие надувные испытания. Нужно пробежать полосу препятствий как можно быстрее. Участники двух команд стартуют одновременно, по одному человеку - каждый по своей стороне полосы, преодолевая препятствия на пути. Задание выполнено - когда участник прошел полосу препятствий в обе стороны (туда и обратно). Каждый следующий участник запускается после выполнения задания предыдущим. Аттракцион безопасен как для взрослых, так и для детей - конструкция исключает риск получения травм. Полосу препятствий можно использовать отдельными блоками.
+                    Самый длинный аттракцион 50 метров. Состоит из шести блоков включающих разнообразные препятствия:
+                    ямы, горки, столбы, неустойчивые опоры и другие надувные испытания. Нужно пробежать полосу
+                    препятствий как можно быстрее. Участники двух команд стартуют одновременно, по одному человеку -
+                    каждый по своей стороне полосы, преодолевая препятствия на пути. Задание выполнено - когда участник
+                    прошел полосу препятствий в обе стороны (туда и обратно). Каждый следующий участник запускается
+                    после выполнения задания предыдущим. Аттракцион безопасен как для взрослых, так и для детей -
+                    конструкция исключает риск получения травм. Полосу препятствий можно использовать отдельными
+                    блоками.
                 </div>
             </div>
         </div>
@@ -321,7 +363,7 @@
                             <img src="assets/images/product_dop3.png" alt="">
                         </div>
                         <div class="dop__item__text">
-                            Event персонал 
+                            Event персонал
                         </div>
                     </div>
                 </div>
@@ -531,7 +573,7 @@
             © 1998-2021 “АрсПро” Все права защищены
         </div>
     </footer>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.thubnails').on('click', function () {
