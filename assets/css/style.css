@@ -514,8 +514,8 @@ h2 {
     position: absolute;
     top: 0;
     right: 0;
-    width: 53.5rem;
-    /* width: 50%; */
+    /* width: 53.5rem; */
+    width: 52%;
 }
 .swiper-prev {
     position: absolute;
@@ -563,14 +563,14 @@ h2 {
 .forst-section__slider-wrap__mobile {
     display: none;
 }
-/* @media (max-width: 1440px) {
+@media (max-width: 1440px) {
     .swiper__container {
         position: absolute;
         top: 0;
         right: 0;
-        width: 60%;
+        width: 53.5rem;
     }
-} */
+}
 @media (max-width: 768px) {
     .first-section__circle {
         position: absolute;
