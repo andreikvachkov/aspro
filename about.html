@@ -11,13 +11,17 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header__page">
         <div class="container">
             <div class="header__wrap">
                 <ul class="header__list_left">
@@ -140,653 +144,116 @@
             </div>
         </div>
     </header>
-    <section class="first-section">
-        <div class="first-section__circle"></div>
-        <div class="first-section__circle2"></div>
-        <div class="first-section__circle3"></div>
+    <section class="page__header page__header_orange">
         <div class="container">
-            <div class="first-section__wrap">
-                <div class="first-section__content">
-                    <div class="first-section__title">
-                        <h1>
-                            Арсенал <br>
-                            ярких проектов
-                        </h1>
-                    </div>
-                    <div class="first-section__description">
-                        Аренда аттракционов и развлечений для вашего мероприятия.
-                    </div>
-                    <div class="first-section__button">
-                        <a href="">Заказать </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper__container">
-            <div class="swiper swiper__main">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="forst-section__slider-wrap">
-                            <img src="assets/images/first_slid1.png" alt="">
-                        </div>
-                        <div class="forst-section__slider-wrap forst-section__slider-wrap__mobile">
-                            <img src="assets/images/first_slid1_mobile.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="forst-section__slider-wrap">
-                            <img src="assets/images/first_slid2.png" alt="">
-                        </div>
-                        <div class="forst-section__slider-wrap forst-section__slider-wrap__mobile">
-                            <img src="assets/images/first_slid2_mobile.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="forst-section__slider-wrap">
-                            <img src="assets/images/first_slid3.png" alt="">
-                        </div>
-                        <div class="forst-section__slider-wrap forst-section__slider-wrap__mobile">
-                            <img src="assets/images/first_slid3_mobile.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-prev btn_left">
-                    <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25.5" cy="25.5" r="25.5" fill="#009640" />
-                        <path d="M30 35L21 25.5L30 16" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="swiper-next btn_right">
-                    <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25.5" cy="25.5" r="25.5" fill="#009640" />
-                        <g clip-path="url(#clip0_503_6383)">
-                            <path d="M21.5 36L30.5 26.5L21.5 17" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_503_6383">
-                                <rect width="23" height="18" fill="white" transform="translate(17 38) rotate(-90)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <script>
-                const swiperMain = new Swiper('.swiper__main', {
-                    slidesPerView: 1,
-                    navigation: {
-                        nextEl: '.swiper-next',
-                        prevEl: '.swiper-prev',
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                    },
-                    effect: 'fade',
-                    loop: true,
-                });
-            </script>
-        </div>
-    </section>
-    <section class="catalog">
-        <div class="container">
-            <div class="catalog__wrap">
-                <div class="title">
-                    <h2>
-                        Каталог аттракционов
-                    </h2>
-                </div>
-                <div class="catalog__main">
-                    <div class="catalog__item">
-                        <div class="catalog__item__circle1"></div>
-                        <div class="catalog__item__img">
-                            <img src="assets/images/catalog1.png" alt="">
-                        </div>
-                        <div class="catalog__item__name">
-                            Командные аттракционы
-                        </div>
-                        <div class="catalog__item__text">
-                            Командные аттракционы для взрослых станут ярким наполнением любых корпоративных мероприятий
-                            и праздников. Тимбилдинг
-                            или корпоратив на природе
-                            не обойдется без подобного реквизита.
-                        </div>
-                        <div class="catalog__item__button">
-                            <a href="">
-                                В каталог
-                            </a>
-                        </div>
-                    </div>
-                    <div class="catalog__item">
-                        <div class="catalog__item__circle2"></div>
-                        <div class="catalog__item__img">
-                            <img src="assets/images/catalog2.png" alt="">
-                        </div>
-                        <div class="catalog__item__name">
-                            Батуты надувные
-                        </div>
-                        <div class="catalog__item__text">
-                            Батуты для организации корпоративных мероприятий, массовых и спортивных праздников. Мы
-                            предлагаем игровое оборудование
-                            и надувные аттракционы
-                            для взрослых и детей разного возраста.
-                        </div>
-                        <div class="catalog__item__button">
-                            <a href="">
-                                В каталог
-                            </a>
-                        </div>
-                    </div>
-                    <div class="catalog__item">
-                        <div class="catalog__item__circle3"></div>
-                        <div class="catalog__item__img">
-                            <img src="assets/images/catalog3.png" alt="">
-                        </div>
-                        <div class="catalog__item__name">
-                            Интерактивные аттракционы
-                        </div>
-                        <div class="catalog__item__text">
-                            Аренда интерактивных аттракционов дает простор фантазии.
-                            Широкий выбор интерактивных аттракционов гарантированно позволит вам создать уникальное
-                            событие.
-                        </div>
-                        <div class="catalog__item__button">
-                            <a href="">
-                                В каталог
-                            </a>
-                        </div>
-                    </div>
-                    <div class="catalog__item">
-                        <div class="catalog__item__circle4"></div>
-                        <div class="catalog__item__img">
-                            <img src="assets/images/catalog4.png" alt="">
-                        </div>
-                        <div class="catalog__item__name">
-                            Спортивные игры
-                        </div>
-                        <div class="catalog__item__text">
-                            Спортивные игры и конкурсы
-                            на природе или в помещении для любой компании.
-                            Уже хорошо знакомые игры получат новое наполнение
-                            и вызовут только положительные эмоции.
-                        </div>
-                        <div class="catalog__item__button">
-                            <a href="">
-                                В каталог
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="page__header__wrap">
+                Каталог аттракционов в аренду
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="about__circle"></div>
+    <section class="breadcrumbs">
         <div class="container">
-            <div class="about__wrap">
-                <div class="title">
-                    <h2>
-                        Немного о нас
-                    </h2>
-                </div>
-                <div class="about__main">
-                    <div class="about_right">
-                        <div class="about_right__title">
-                            Компания «АРСПРО»
-                        </div>
-                        <div class="about_right__text">
-                            Наша компания предлагает эффективный инструмент для организации активного корпоративного
-                            отдыха, спортивных мероприятий и тимбилдинга – большие надувные аттракционы и батуты. С
-                            помощью аттракционов и батутов за короткое время как в помещении, так и на открытом воздухе
-                            можно создать оригинальную площадку для проведения разного рода событий.
-                            <br> <br>
-                            В нашем арсенале есть масса аттракционов, которые можно использовать и летом, и зимой.
-                            Спартакиады, спортивные состязания, интерактивные игры, корпоративные праздники – это лишь
-                            небольшой список того, что можно организовать при помощи аттракционов. Их можно использовать
-                            также в квестах
-                            и в организации детских праздников, а также при организации крупных городских событий.
-                        </div>
-                        <div class="about_right__button">
-                            <a href="">
-                                Читать дальше
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="project">
-        <div class="container">
-            <div class="project__wrap">
-                <div class="title">
-                    <h2>
-                        Наши проекты
-                    </h2>
-                </div>
-                <div class="project__main">
-                    <div class="project__item">
-                        <div class="project__item__img">
-                            <img src="assets/images/project1.png" alt="">
-                        </div>
-                        <div class="project__item__name">
-                            Teambuilding
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__item__img">
-                            <img src="assets/images/project2.png" alt="">
-                        </div>
-                        <div class="project__item__name">
-                            Спартакиада
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__item__img">
-                            <img src="assets/images/project3.png" alt="">
-                        </div>
-                        <div class="project__item__name">
-                            Family Day
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__item__img">
-                            <img src="assets/images/project4.png" alt="">
-                        </div>
-                        <div class="project__item__name">
-                            Корпоратив на природе
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__item__img">
-                            <img src="assets/images/project5.png" alt="">
-                        </div>
-                        <div class="project__item__name">
-                            Эстафета
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="dopuslugi">
-        <div class="dopuslugi__circle"></div>
-        <div class="dopuslugi__circle2"></div>
-        <div class="container">
-            <div class="dopuslugi__wrap">
-                <div class="title">
-                    <h2>
-                        Дополнительные услуги
-                    </h2>
-                </div>
-                <div class="dopuslugi__main">
-                    <div class="dopuslugi__item">
-                        <img src="assets/images/dop1.png" alt="">
-                        <div class="dopuslugi__item__content">
-                            Event <br> персонал
-                        </div>
-                    </div>
-                    <div class="dopuslugi__item">
-                        <img src="assets/images/dop2.png" alt="">
-                        <div class="dopuslugi__item__content">
-                            Организация <br> мероприятий
-                        </div>
-                    </div>
-                    <div class="dopuslugi__item">
-                        <img src="assets/images/dop3.png" alt="">
-                        <div class="dopuslugi__item__content">
-                            Техническое <br>
-                            обеспечение мероприятий
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="advantages">
-        <div class="container">
-            <div class="advantages__wrap">
-                <div class="title">
-                    <h2>
-                        Почему выбирают именно нас
-                    </h2>
-                </div>
-                <div class="title advantages__title__mobile">
-                    <h2>
-                        Почему выбирают нас?
-                    </h2>
-                </div>
-                <div class="advantages__main">
-                    <div class="advantages__item">
-                        <div class="advantages__item__image">
-                            <img src="assets/images/advantages1.svg" alt="">
-                        </div>
-                        <div class="advantages__item__name">
-                            Большой выбор
-                        </div>
-                        <div class="advantages__item__text">
-                            Собственное оборудование более 90 различных аттракционов
-                        </div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item__image">
-                            <img src="assets/images/advantages2.svg" alt="">
-                        </div>
-                        <div class="advantages__item__name">
-                            Гарантия качества
-                        </div>
-                        <div class="advantages__item__text">
-                            Опыт с 1998 года Проведено свыше 5000 мероприятий
-                        </div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item__image">
-                            <img src="assets/images/advantages3.svg" alt="">
-                        </div>
-                        <div class="advantages__item__name">
-                            Эмоции
-                        </div>
-                        <div class="advantages__item__text">
-                            Праздник пройдет на ура и все будут в восторге
-                        </div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item__image">
-                            <img src="assets/images/advantages4.svg" alt="">
-                        </div>
-                        <div class="advantages__item__name">
-                            География
-                        </div>
-                        <div class="advantages__item__text">
-                            Работаем по всему Сибирскому региону
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="reviews">
-        <div class="container">
-            <div class="reviews__wrap">
-                <div class="title">
-                    <h2>
-                        Отзывы наших клиентов
-                    </h2>
-                </div>
-                <div class="reviews__main">
-                    <div class="swiper swiper__main2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Беляева Ирина
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Координатор группы обучения <br>
-                                        ЗАО «Райффайзенбанк»
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        «Благодарим Ваш коллектив за отличное, профессиальное проведение тимбилдинга для
-                                        наших сотрудников. Все без исключения остались довольны и счастливы. С большим
-                                        удовольствием будем к Вам обращаться для проведения подобных мероприятий.
-                                        Удачи!»
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Бондарева Татьяна
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Старший менеджер по персоналу <br>
-                                        Группа предприятий ЭТМ (Сибирь)
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        Выражаем благодарность творческому объединению "АрсПро" за организацию
-                                        и проведение командных игр. Все было тщательно продумано и четко спланировано.
-                                        "АрсПро" - на сто процентов клиентоориентированая компания, качество работы
-                                        команды которой - на высоте!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Фомичев Эдуард
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Директор <br>
-                                        РУ ГК ТД «Септима»
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        «Выражаем благодарность Творческому объединению «АрсПро» за грамотную
-                                        организацию и проведение конкурсной программы в честь Дня рождения компании»;
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Беляева Ирина
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Координатор группы обучения <br>
-                                        ЗАО «Райффайзенбанк»
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        «Благодарим Ваш коллектив за отличное, профессиальное проведение тимбилдинга для
-                                        наших сотрудников. Все без исключения остались довольны и счастливы. С большим
-                                        удовольствием будем к Вам обращаться для проведения подобных мероприятий.
-                                        Удачи!»
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Бондарева Татьяна
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Старший менеджер по персоналу <br>
-                                        Группа предприятий ЭТМ (Сибирь)
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        Выражаем благодарность творческому объединению "АрсПро" за организацию
-                                        и проведение командных игр. Все было тщательно продумано и четко спланировано.
-                                        "АрсПро" - на сто процентов клиентоориентированая компания, качество работы
-                                        команды которой - на высоте!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__item">
-                                    <div class="reviews__item__name">
-                                        Фомичев Эдуард
-                                    </div>
-                                    <div class="reviews__item__post">
-                                        Директор <br>
-                                        РУ ГК ТД «Септима»
-                                    </div>
-                                    <div class="reviews__item__text">
-                                        «Выражаем благодарность Творческому объединению «АрсПро» за грамотную
-                                        организацию и проведение конкурсной программы в честь Дня рождения компании»;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-pagination2"></div>
-                    </div>
-                    <div class="swiper-prev2 btn_left">
-                        <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 20L0.999999 10.5L10 1" stroke="#181717" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="swiper-next2 btn_right">
-                        <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 20L10 10.5L0.999999 1" stroke="#181717" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <script>
-                        const swiperMain2 = new Swiper('.swiper__main2', {
-                            slidesPerView: 3,
-                            slidesPerGroup: 3,
-                            spaceBetween: 40,
-                            navigation: {
-                                nextEl: '.swiper-next2',
-                                prevEl: '.swiper-prev2',
-                            },
-                            pagination: {
-                                el: '.swiper-pagination2',
-                            },
-                            loop: true,
-                            breakpoints: {
-                                320: {
-                                    slidesPerView: 1,
-                                    slidesPerGroup: 1,
-                                    spaceBetween: 40,
-                                    pagination: {
-                                        el: '.swiper-pagination2',
-                                        type: 'fraction',
-                                        formatFractionCurrent: function (number) {
-                                            return ('0' + number).slice(-2);
-                                        },
-                                        formatFractionTotal: function (number) {
-                                            return ('0' + number).slice(-2);
-                                        },
-                                        renderFraction: function (currentClass, totalClass) {
-                                            return '<span class="' + currentClass + '"> </span>' +
-                                                '<span> / </span>' +
-                                                '<span class="' + totalClass + '"> </span>';
-                                        }
-                                    },
-                                },
-                                500: {
-                                    slidesPerView: 1,
-                                    slidesPerGroup: 1,
-                                    spaceBetween: 40,
-                                    pagination: {
-                                        el: '.swiper-pagination2',
-                                        type: 'fraction',
-                                        formatFractionCurrent: function (number) {
-                                            return ('0' + number).slice(-2);
-                                        },
-                                        formatFractionTotal: function (number) {
-                                            return ('0' + number).slice(-2);
-                                        },
-                                        renderFraction: function (currentClass, totalClass) {
-                                            return '<span class="' + currentClass + '"> </span>' +
-                                                '<span> / </span>' +
-                                                '<span class="' + totalClass + '"> </span>';
-                                        }
-                                    },
-                                },
-                                769: {
-                                    slidesPerView: 3,
-                                    slidesPerGroup: 3,
-                                    spaceBetween: 40,
-                                    navigation: {
-                                        nextEl: '.swiper-next2',
-                                        prevEl: '.swiper-prev2',
-                                    },
-                                    pagination: {
-                                        el: '.swiper-pagination2',
-                                    },
-                                    loop: true,
-                                },
-                                1024: {
-                                    spaceBetween: 40,
-                                },
-                            },
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contacts">
-        <div class="container">
-            <div class="contacts__wrap">
-                <div class="contacts__main">
-                    <div class="contacts__title">
-                        Наши контакты
-                    </div>
-                    <div class="contacts__address">
-                        <div class="address__name">
-                            Адрес:
-                        </div>
-                        <div class="address">
-                            ул. Фадеева 66/2,
-                            г. Новосибирск, Россия,
-                            630020
-                        </div>
-                    </div>
-                    <div class="contacts__email">
-                        E-mail: <a href="">info@ars-pro.ru</a>
-                    </div>
+            <div class="breadcrumbs__wrap">
+                <div class="breadcrumbs__left">
                     <ul>
-                        <li>
-                            <a href="">
-                                +7(383) 213-11-31
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                +7(383) 264-50-31
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                +7 913–985–11–31
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                +7 903–905–11–31
-                            </a>
-                        </li>
+                        <li><a href="#">Главная</a></li>
+                        <li>О нас</li>
                     </ul>
-                    <div class="contacts__socies">
-                        <a href="">
-                            <div class="socies__telephone">
-                                +7 991–377–11–31
-                            </div>
-                            <div class="socies__tg-ico">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_149_11938)">
-                                        <path
-                                            d="M14 0C6.272 0 0 6.272 0 14C0 21.728 6.272 28 14 28C21.728 28 28 21.728 28 14C28 6.272 21.728 0 14 0ZM20.496 9.52C20.286 11.732 19.376 17.108 18.914 19.586C18.718 20.636 18.326 20.986 17.962 21.028C17.15 21.098 16.534 20.496 15.75 19.978C14.518 19.166 13.818 18.662 12.628 17.878C11.242 16.968 12.138 16.464 12.936 15.652C13.146 15.442 16.73 12.18 16.8 11.886C16.8097 11.8415 16.8084 11.7952 16.7962 11.7513C16.784 11.7074 16.7613 11.6671 16.73 11.634C16.646 11.564 16.534 11.592 16.436 11.606C16.31 11.634 14.35 12.936 10.528 15.512C9.968 15.89 9.464 16.086 9.016 16.072C8.512 16.058 7.56 15.792 6.846 15.554C5.964 15.274 5.278 15.12 5.334 14.63C5.362 14.378 5.712 14.126 6.37 13.86C10.458 12.082 13.174 10.906 14.532 10.346C18.424 8.722 19.222 8.442 19.754 8.442C19.866 8.442 20.132 8.47 20.3 8.61C20.44 8.722 20.482 8.876 20.496 8.988C20.482 9.072 20.51 9.324 20.496 9.52Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_149_11938">
-                                            <rect width="28" height="28" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="socies__wt-ico">
-                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M31.1667 9.19992C31.1507 8.5939 31.1035 7.98909 31.025 7.38788C30.9192 6.86129 30.7429 6.35109 30.5008 5.87081C30.2476 5.34982 29.9076 4.87493 29.495 4.46613C29.0786 4.06186 28.6005 3.72528 28.0783 3.4688C27.5933 3.23343 27.0788 3.06337 26.5483 2.96311C25.9478 2.87391 25.3421 2.8223 24.735 2.80859H9.27917C8.66798 2.82438 8.05801 2.87126 7.45167 2.94906C6.92059 3.05395 6.40604 3.22874 5.92167 3.4688C5.39623 3.71987 4.91729 4.05704 4.505 4.46613C4.09729 4.87898 3.75784 5.35304 3.49917 5.87081C3.26179 6.35173 3.09028 6.86193 2.98917 7.38788C2.89921 7.98337 2.84716 8.58389 2.83333 9.18588V24.511C2.84925 25.117 2.89653 25.7219 2.975 26.3231C3.08078 26.8496 3.25706 27.3599 3.49917 27.8401C3.75238 28.3611 4.09243 28.836 4.505 29.2448C4.92137 29.6491 5.39947 29.9857 5.92167 30.2421C6.40668 30.4775 6.92123 30.6476 7.45167 30.7478C8.05224 30.837 8.65788 30.8886 9.265 30.9023H24.7208C25.332 30.8866 25.942 30.8397 26.5483 30.7619C27.0794 30.657 27.594 30.4822 28.0783 30.2421C28.6038 29.9911 29.0827 29.6539 29.495 29.2448C29.9027 28.832 30.2422 28.3579 30.5008 27.8401C30.7382 27.3592 30.9097 26.849 31.0108 26.3231C31.1008 25.7276 31.1528 25.127 31.1667 24.5251V9.19992ZM17.3258 26.6883C15.6245 26.68 13.9529 26.2451 12.4667 25.4241L7.08333 26.8288L8.5 21.6033C7.58641 20.0813 7.09748 18.3457 7.08333 16.5745C7.08897 14.584 7.68854 12.6396 8.80651 10.9863C9.92448 9.33295 11.5109 8.04461 13.3659 7.28353C15.2209 6.52245 17.2615 6.32266 19.2308 6.70932C21.2001 7.09599 23.01 8.05182 24.4324 9.45642C25.8549 10.861 26.8264 12.6516 27.2246 14.6026C27.6227 16.5536 27.4297 18.5778 26.6699 20.4203C25.91 22.2628 24.6173 23.8411 22.9545 24.9565C21.2918 26.0718 19.3333 26.6744 17.3258 26.6883ZM17.3258 8.24473C15.8239 8.26178 14.3533 8.67314 13.0639 9.43695C11.7744 10.2008 10.7121 11.2897 9.98509 12.593C9.25808 13.8962 8.89234 15.3672 8.92512 16.8562C8.95789 18.3452 9.38801 19.799 10.1717 21.0695L10.37 21.3926L9.52 24.4689L12.75 23.598L13.0617 23.7806C14.3502 24.5332 15.8162 24.9353 17.3117 24.9465C19.566 24.9465 21.728 24.0585 23.3221 22.4779C24.9161 20.8973 25.8117 18.7536 25.8117 16.5183C25.8117 14.2831 24.9161 12.1393 23.3221 10.5588C21.728 8.97818 19.566 8.09022 17.3117 8.09022L17.3258 8.24473ZM22.2842 20.2127C22.0986 20.5196 21.8502 20.7844 21.5549 20.9901C21.2596 21.1957 20.9241 21.3377 20.57 21.4067C20.0409 21.5025 19.4962 21.4688 18.9833 21.3083C18.5007 21.1587 18.0277 20.9805 17.5667 20.7745C15.8153 19.9032 14.3217 18.5964 13.2317 16.9819C12.6393 16.2339 12.2799 15.3308 12.1975 14.3832C12.1891 13.9896 12.2642 13.5986 12.4179 13.2357C12.5717 12.8727 12.8006 12.5458 13.09 12.2762C13.1752 12.1804 13.2798 12.1034 13.3969 12.0501C13.5141 11.9969 13.6412 11.9686 13.77 11.9672H14.1667C14.3225 11.9672 14.535 11.9672 14.7333 12.4026C14.9317 12.8381 15.4558 14.1444 15.5267 14.2708C15.5615 14.3382 15.5796 14.4129 15.5796 14.4886C15.5796 14.5643 15.5615 14.6389 15.5267 14.7063C15.464 14.8589 15.378 15.0011 15.2717 15.1277C15.1442 15.2822 15.0025 15.4648 14.8892 15.5772C14.7758 15.6896 14.6342 15.83 14.7758 16.0829C15.1613 16.7279 15.6384 17.3145 16.1925 17.8247C16.7959 18.3534 17.4858 18.7762 18.2325 19.0749C18.4875 19.2013 18.6433 19.1873 18.785 19.0749C18.9267 18.9625 19.4225 18.3444 19.5925 18.0916C19.7625 17.8388 19.9325 17.8809 20.1592 17.9652C20.3858 18.0495 21.6467 18.6535 21.9017 18.7799C22.1567 18.9063 22.3125 18.9625 22.3833 19.0749C22.4448 19.4425 22.4106 19.8196 22.2842 20.1705V20.2127Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
                 </div>
-                <img class="contacts__map_mobile" src="assets/images/contacts_mobile.jpg" alt="">
             </div>
         </div>
-        <img class="contacts__map" src="assets/images/contacts.jpg" alt="">
-
+    </section>
+    <section class="top__about">
+        <div class="container">
+            <div class="top__about__wrap">
+                <div class="top__about__item">
+                    <div class="top__about__item__image">
+                        <img src="assets/images/about_gal1.png" alt="">
+                    </div>
+                    <div class="top__about__item__text">
+                        АРСПРО - первый в Сибири парк мобильных аттракционов, который постоянно обновляется и
+                        пополняется новинками.
+                    </div>
+                </div>
+                <div class="top__about__item">
+                    <div class="top__about__item__image">
+                        <img src="assets/images/about_gal2.png" alt="">
+                    </div>
+                    <div class="top__about__item__text">
+                        Только мы предлагаем уникальную возможность взять аттракционы
+                        и батуты в аренду.
+                    </div>
+                </div>
+                <div class="top__about__item">
+                    <div class="top__about__item__image">
+                        <img src="assets/images/about_gal3.png" alt="">
+                    </div>
+                    <div class="top__about__item__text">
+                        Работаем по всему Сибирскому региону.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom__about">
+        <div class="container">
+            <div class="bottom__about__wrap">
+                <div class="bottom__about__item">
+                    <div class="bottom__about__item__image">
+                        <img src="assets/images/about_b1.png" alt="">
+                    </div>
+                    <div class="bottom__about__item__content">
+                        <ul>
+                            <li>
+                                Наша компания предлагает эффективный инструмент для организации активного корпоративного отдыха, спортивных мероприятий и тимбилдинга — большие надувные аттракционы, батуты.
+                            </li>
+                            <li>
+                                С помощью них за короткое время можно создать оригинальную площадку для проведения разного рода событий.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom__about__item">
+                    <div class="bottom__about__item__image">
+                        <img src="assets/images/about_b2.png" alt="">
+                    </div>
+                    <div class="bottom__about__item__content">
+                        <ul>
+                            <li>
+                                В нашем арсенале есть масса аттракционов, которые можно использовать и летом, и зимой. 
+                            </li>
+                            <li>
+                                Спартакиады, спортивные состязания, интерактивные игры, корпоративные праздники — это лишь небольшой список того, что можно организовать при помощи аттракционов.
+                            </li>
+                            <li>
+                                Использование аттракционов для взрослых позволяет организовать интерактивное шоу, что значительно повышает интерес участников и зрителей к происходящему, вызывает массу положительных эмоций, даёт возможность для реализации самых креативных идей. 
+                            </li>
+                            <li>
+                                Их можно использовать как в помещении, так и на открытом воздухе, в квестах и в организации детских праздников, а также при организации крупных городских событий.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom__about__item">
+                    <div class="bottom__about__item__image">
+                        <img src="assets/images/about_b3.png" alt="">
+                    </div>
+                    <div class="bottom__about__item__content">
+                        <ul>
+                            <li>
+                                Активный отдых – одна из самых актуальных тенденций в мире праздничной индустрии.
+                            </li>
+                            <li>
+                                Аренда аттракционов позволяет ярко и весело провести любое мероприятие и одновременно решить целый ряд задач, таких как повышение эффективности командной работы, мотивация для достижения общих целей, сплочение коллектива. 
+                            </li>
+                            <li>
+                                Каждый участник отдельно может проявить собственный потенциал и личностную активность.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__container">

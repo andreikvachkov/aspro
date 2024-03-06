@@ -49,4 +49,34 @@ document.addEventListener('DOMContentLoaded', function () {
         filterList.classList.toggle('open');
         filterName.classList.toggle('open');
     });
+
+
+});
+
+function toggleNav() {
+    var sidebar = document.getElementById("mobile-menu");
+    sidebar.classList.toggle('open');
+}
+
+function toggleNavBasket(event) {
+    event.preventDefault();
+    var sidebar2 = document.getElementById("basket__poup");
+    sidebar2.classList.toggle('open');
+}
+
+function toggleNavThanks(event) {
+    event.preventDefault();
+    var sidebar3 = document.getElementById("thanks__popup");
+    sidebar3.classList.toggle('open');
+}
+
+var menuButtons = document.querySelectorAll('.mobile__submenu__btn');
+
+menuButtons.forEach(function(menuButton) {
+    menuButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        var submenu = this.nextElementSibling;
+        submenu.classList.toggle('open');
+        this.classList.toggle('open');
+    });
 });
