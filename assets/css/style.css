@@ -909,7 +909,7 @@ h2 {
     font-weight: 400;
     font-size: 1rem;
     color: var(--black);
-    padding: 0.625rem 0 1.375rem;
+    padding: 0 0 1.375rem;
 }
 .about_right__button a {
     position: relative;
@@ -2810,7 +2810,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* top__about  */
 .top__about {
-    padding-bottom: 2.4375rem;
+    padding-bottom: 5.9375rem;
 }
 .top__about__wrap {
     display: flex;
@@ -2895,13 +2895,13 @@ input[type="range"]::-moz-range-thumb {
 /* bottom__about  */
 
 .bottom__about {
-    padding-bottom: 16.3125rem;
+    padding-bottom: 6.25rem;
 }
 .bottom__about__wrap {
     padding-left: 7.375rem;
     display: flex;
     flex-direction: column;
-    gap: 6.625rem;
+    gap: 2.125rem;
 }
 .bottom__about__item {
     display: flex;
@@ -2915,7 +2915,7 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
 }
 .bottom__about__item__content {
-    width: 41.5rem;
+    width: 100%;
 }
 .bottom__about__item__content ul {
     display: flex;
